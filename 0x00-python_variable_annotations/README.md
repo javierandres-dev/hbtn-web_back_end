@@ -1,0 +1,43 @@
+# 0x00. Python - Variable Annotations
+:open_file_folder: Specializations - Web Stack programming ― Back-end  
+:bust_in_silhouette: by Emmanuel Turlay, Staff Software Engineer at Cruise  
+:copyright: **[Holberton School](https://www.holbertonschool.com/)**  
+:bookmark: duck typing | python | type annotations | variable annotations
+
+## Resources
+### For this project, students are expected to look at this concept:
+* [Advanced Python](https://intranet.hbtn.io/concepts/136)
+### Read or watch:
+* [Python 3 typing documentation](https://docs.python.org/3/library/typing.html)
+* [MyPy cheat sheet](https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html)
+
+## Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/2012/04/feynman-technique/), without the help of Google:
+### General
+* Type annotations in Python 3
+* How you can use type annotations to specify function signatures and variable types
+* Duck typing
+* How to validate your code with ```mypy```
+
+## Requirements
+* A ```README.md``` file.
+* All your files should end with a new line.
+
+## Tasks
+* [ ] 0. Basic annotations - add
+* [ ] 1. Basic annotations - concat
+* [ ] 2. Basic annotations - floor
+* [ ] 3. Basic annotations - to string
+* [ ] 4. Define variables
+* [ ] 5. Complex types - list of floats
+* [ ] 6. Complex types - mixed list
+* [ ] 7. Complex types - string and int/float to tuple
+* [ ] 8. Complex types - functions
+* [ ] 9. Let's duck type an iterable object
+* [ ] 10. Duck typing - first element of a sequence
+* [ ] 11. More involved type annotations
+* [ ] 12. Type Checking
+
+## Software engineer
+Javier Andrés Garzón Patarroyo  
+:octocat: [GitHub](https://github.com/javierandresgp/)
