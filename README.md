@@ -4,7 +4,7 @@
 
 ## Projects
 :open_file_folder:
-* [ ] 574 0x00. Python - Variable Annotations
+* [x] 574 0x00. Python - Variable Annotations
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  

@@ -24,19 +24,19 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * All your files should end with a new line.
 
 ## Tasks
-* [ ] 0. Basic annotations - add
-* [ ] 1. Basic annotations - concat
-* [ ] 2. Basic annotations - floor
-* [ ] 3. Basic annotations - to string
-* [ ] 4. Define variables
-* [ ] 5. Complex types - list of floats
-* [ ] 6. Complex types - mixed list
-* [ ] 7. Complex types - string and int/float to tuple
-* [ ] 8. Complex types - functions
-* [ ] 9. Let's duck type an iterable object
-* [ ] 10. Duck typing - first element of a sequence
-* [ ] 11. More involved type annotations
-* [ ] 12. Type Checking
+* [x] 0. Basic annotations - add
+* [x] 1. Basic annotations - concat
+* [x] 2. Basic annotations - floor
+* [x] 3. Basic annotations - to string
+* [x] 4. Define variables
+* [x] 5. Complex types - list of floats
+* [x] 6. Complex types - mixed list
+* [x] 7. Complex types - string and int/float to tuple
+* [x] 8. Complex types - functions
+* [x] 9. Let's duck type an iterable object
+* [x] 10. Duck typing - first element of a sequence
+* [x] 11. More involved type annotations
+* [x] 12. Type Checking
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
