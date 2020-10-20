@@ -23,11 +23,11 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. The basics of async
-* [ ] 1. Let's execute multiple coroutines at the same time with async
-* [ ] 2. Measure the runtime
-* [ ] 3. Tasks
-* [ ] 4. Tasks
+* [x] 0. The basics of async
+* [x] 1. Let's execute multiple coroutines at the same time with async
+* [x] 2. Measure the runtime
+* [x] 3. Tasks
+* [x] 4. Tasks
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
