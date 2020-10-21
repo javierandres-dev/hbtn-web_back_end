@@ -6,6 +6,7 @@
 :open_file_folder:
 * [x] 574 0x00. Python - Variable Annotations
 * [x] 575 0x01. Python - Async
+* [ ] 576 0x02. Python - Async Comprehension
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
