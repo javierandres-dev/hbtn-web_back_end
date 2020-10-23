@@ -7,6 +7,7 @@
 * [x] 574 0x00. Python - Variable Annotations
 * [x] 575 0x01. Python - Async
 * [x] 576 0x02. Python - Async Comprehension
+* [ ] 390 0x03. Caching
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
