@@ -1,7 +1,7 @@
 # 0x03. Caching
 :open_file_folder: Specializations - Web Stack programming ― Back-end  
 :bust_in_silhouette: by Guillaume, CTO at Holberton School  
-:copyright: **[Holberton School](https://www.holbertonschool.com/)**  
+:copyright: **[Holberton School](https://www.holbertonschool.com/)**
 
 ## Background Context
 In this project, you learn different caching algorithms.
@@ -30,12 +30,12 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Basic dictionary
-* [ ] 1. FIFO caching
-* [ ] 2. LIFO Caching
-* [ ] 3. LRU Caching
-* [ ] 4. MRU Caching
-* [ ] 5. LFU Caching
+* [x] 0. Basic dictionary
+* [x] 1. FIFO caching
+* [x] 2. LIFO Caching
+* [x] 3. LRU Caching
+* [x] 4. MRU Caching
+* [x] 5. LFU Caching
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
