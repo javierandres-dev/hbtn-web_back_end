@@ -8,7 +8,7 @@
 * [x] 575 0x01. Python - Async
 * [x] 576 0x02. Python - Async Comprehension
 * [x] 390 0x03. Caching
-* [ ] 585 0x04. Pagination
+* [x] 585 0x04. Pagination
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  

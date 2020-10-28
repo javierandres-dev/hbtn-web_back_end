@@ -22,10 +22,10 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 [use this data file](https://holbertonintranet.s3.amazonaws.com/uploads/misc/2020/5/7d3576d97e7560ae85135cc214ffe2b3412c51d7.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20201028%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201028T180509Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e4fd78590fbaaa488de6f1378eeacdebe7b80f147baa83317be61978b085429c) for your project
 
 ## Tasks
-* [ ] 0. Simple helper function
-* [ ] 1. Simple pagination
-* [ ] 2. Hypermedia pagination
-* [ ] 3. Deletion-resilient hypermedia pagination
+* [x] 0. Simple helper function
+* [x] 1. Simple pagination
+* [x] 2. Hypermedia pagination
+* [x] 3. Deletion-resilient hypermedia pagination
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
