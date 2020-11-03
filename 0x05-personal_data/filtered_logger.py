@@ -6,6 +6,7 @@ import logging
 PII_FIELDS = ('name', 'email', 'phone', 'ssn', 'password')
 """ containing the fields from user_data.csv that are considered PII. """
 
+
 class RedactingFormatter(logging.Formatter):
     """ Redacting Formatter class
         """
