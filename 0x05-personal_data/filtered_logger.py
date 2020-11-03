@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-""" Regex-ing, Log formatter, Create logger """
+""" Regex-ing, Log formatter, Create logger, Connect to secure database """
 from typing import List
 import re
 import logging
+import os
+import mysql.connector
 PII_FIELDS = ('name', 'email', 'phone', 'ssn', 'password')
 """ containing the fields from user_data.csv that are considered PII. """
 
@@ -46,3 +48,12 @@ def get_logger() -> logging.Logger:
     handler.setFormatter(RedactingFormatter(PII_FIELDS))
     logger.addHandler(handler)
     return logger
+
+
+def get_db() -> mysql.connector.connection.MySQLConnection:
+    """ returns a connector to the database """
+    return mysql.connector.connect(
+                    host=os.environ.get('PERSONAL_DATA_DB_HOST', 'localhost'),
+                    database=os.environ.get('PERSONAL_DATA_DB_NAME', 'root'),
+                    user=os.environ.get('PERSONAL_DATA_DB_USERNAME'),
+                    password=os.environ.get('PERSONAL_DATA_DB_PASSWORD', ''))
