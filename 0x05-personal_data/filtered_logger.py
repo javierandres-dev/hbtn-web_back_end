@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-""" Regex-ing, Log formatter, Create logger, Connect to secure database """
+""" Regex-ing, Log formatter, Create logger, Connect to secure database,
+    Read and filter data """
 from typing import List
 import re
 import logging
@@ -57,3 +58,29 @@ def get_db() -> mysql.connector.connection.MySQLConnection:
                     database=os.environ.get('PERSONAL_DATA_DB_NAME', 'root'),
                     user=os.environ.get('PERSONAL_DATA_DB_USERNAME'),
                     password=os.environ.get('PERSONAL_DATA_DB_PASSWORD', ''))
+
+
+def main():
+    """ obtain a database connection using get_db and retrieve all rows in the
+        users table and display each row under a filtered format """
+    db = get_db()
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM users;")
+    result = cursor.fetchall()
+    for row in result:
+        message = f"name={row[0]}; " + \
+                  f"email={row[1]}; " + \
+                  f"phone={row[2]}; " + \
+                  f"ssn={row[3]}; " + \
+                  f"password={row[4]};"
+        print(message)
+        log_record = logging.LogRecord("my_logger", logging.INFO,
+                                       None, None, message, None, None)
+        formatter = RedactingFormatter(PII_FIELDS)
+        formatter.format(log_record)
+    cursor.close()
+    db.close()
+
+
+if __name__ == "__main__":
+    main()
