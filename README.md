@@ -9,7 +9,7 @@
 * [x] 576 0x02. Python - Async Comprehension
 * [x] 390 0x03. Caching
 * [x] 585 0x04. Pagination
-* [ ] 602 0x05. Personal data
+* [x] 602 0x05. Personal data
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  

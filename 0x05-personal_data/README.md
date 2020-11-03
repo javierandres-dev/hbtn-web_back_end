@@ -25,13 +25,13 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Regex-ing
-* [ ] 1. Log formatter
-* [ ] 2. Create logger
-* [ ] 3. Connect to secure database
-* [ ] 4. Read and filter data
-* [ ] 5. Encrypting passwords
-* [ ] 6. Check valid password
+* [x] 0. Regex-ing
+* [x] 1. Log formatter
+* [x] 2. Create logger
+* [x] 3. Connect to secure database
+* [x] 4. Read and filter data
+* [x] 5. Encrypting passwords
+* [x] 6. Check valid password
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
