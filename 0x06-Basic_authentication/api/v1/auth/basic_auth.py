@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 """ Basic auth, Basic - Base64 part, Basic - Base64 decode """
 from api.v1.auth.auth import Auth
 from base64 import b64decode
