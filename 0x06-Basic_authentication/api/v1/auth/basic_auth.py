@@ -35,4 +35,3 @@ class BasicAuth(Auth):
         except Exception:
             return None
         return decodedValue
-
