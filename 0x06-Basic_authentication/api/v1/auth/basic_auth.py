@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-""" Basic auth, Basic - Base64 part, Basic - Base64 decode,
-    Basic - User credentials, Basic - User object """
+""" Basic auth, Base64 part, Base64 decode, User credentials, User object,
+    Overload current_user - and BOOM! """
 from api.v1.auth.auth import Auth
 from base64 import b64decode
 from typing import TypeVar
@@ -65,5 +65,18 @@ class BasicAuth(Auth):
             for user in users:
                 if user.is_valid_password(user_pwd):
                     return user
+        except Exception:
+            return None
+
+    def current_user(self, request=None) -> TypeVar('User'):
+        """ overloads Auth and retrieves the User instance for a request """
+        try:
+            header = self.authorization_header(request)
+            base64Header = self.extract_base64_authorization_header(header)
+            decodeValue = self.decode_base64_authorization_header(base64Header)
+            credentials = self.extract_user_credentials(decodeValue)
+            user = self.user_object_from_credentials(credentials[0],
+                                                     credentials[1])
+            return user
         except Exception:
             return None
