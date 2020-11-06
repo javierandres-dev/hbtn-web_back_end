@@ -1,4 +1,4 @@
-#!//bin/env python3
+#!/bin/env python3
 """ Basic auth, Basic - Base64 part, Basic - Base64 decode """
 from api.v1.auth.auth import Auth
 from base64 import b64decode
@@ -32,6 +32,6 @@ class BasicAuth(Auth):
             baseEncode = base64_authorization_header.encode('utf-8')
             baseDecode = b64decode(baseEncode)
             decodedValue = baseDecode.decode('utf-8')
+            return decodedValue
         except Exception:
             return None
-        return decodedValue
