@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Auth class """
+""" Auth class, Require auth with stars """
 from flask import request
 from typing import List, TypeVar
 
