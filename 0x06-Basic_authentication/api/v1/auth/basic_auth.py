@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Basic auth, Base64 part, Base64 decode, User credentials, User object,
-    Overload current_user - and BOOM! """
+    Overload current_user - and BOOM!, Allow password with ":" """
 from api.v1.auth.auth import Auth
 from base64 import b64decode
 from typing import TypeVar
