@@ -10,7 +10,7 @@
 * [x] 390 0x03. Caching
 * [x] 585 0x04. Pagination
 * [x] 602 0x05. Personal data
-* [ ] 380 0x06. Basic authentication
+* [x] 380 0x06. Basic authentication
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
