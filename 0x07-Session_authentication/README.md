@@ -27,15 +27,15 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Et moi et moi et moi!
-* [ ] 1. Empty session
-* [ ] 2. Create a session
-* [ ] 3. User ID from Session ID
-* [ ] 4. Session cookie
-* [ ] 5. Before request
-* [ ] 6. Use Session ID for identifying a User
-* [ ] 7. New view for Session Authentication
-* [ ] 8. Logout
+* [x] 0. Et moi et moi et moi!
+* [x] 1. Empty session
+* [x] 2. Create a session
+* [x] 3. User ID from Session ID
+* [x] 4. Session cookie
+* [x] 5. Before request
+* [x] 6. Use Session ID for identifying a User
+* [x] 7. New view for Session Authentication
+* [x] 8. Logout
 * [ ] 9. Expiration?
 * [ ] 10. Sessions in database
 
