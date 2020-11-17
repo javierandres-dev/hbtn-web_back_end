@@ -3,7 +3,7 @@
 import bcrypt
 from sqlalchemy.orm.exc import NoResultFound
 from db import DB
-from typing import TypeVar
+from user import User
 
 
 def _hash_password(password: str) -> str:
@@ -21,7 +21,7 @@ class Auth:
         """ constructor """
         self._db = DB()
 
-    def register_user(self, email: str, password: str) -> TypeVar('User'):
+    def register_user(self, email: str, password: str) -> User:
         """ take mandatory email and password string arguments and
             return a User object """
         try:
