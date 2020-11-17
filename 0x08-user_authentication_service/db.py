@@ -11,7 +11,7 @@ class DB:
     """ class """
     def __init__(self):
         """ constructor """
-        self._engine = create_engine("sqlite:///a.db", echo=True)
+        self._engine = create_engine("sqlite:///a.db", echo=False)
         Base.metadata.drop_all(self._engine)
         Base.metadata.create_all(self._engine)
         self.__session = None
@@ -25,7 +25,7 @@ class DB:
         return self.__session
 
     def add_user(self, email: str, hashed_password: str) -> TypeVar('User'):
-        """ returns a User object """
+        """ save the user to the database and returns a User object """
         user = User(email=email, hashed_password=hashed_password)
         self._session.add(user)
         self._session.commit()
