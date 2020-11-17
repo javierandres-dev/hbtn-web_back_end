@@ -12,6 +12,7 @@
 * [x] 602 0x05. Personal data
 * [x] 380 0x06. Basic authentication
 * [x] 383 0x07. Session authentication
+* [ ] 584 0x08. User authentication service
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
