@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Create user, Find user """
+""" Create user, Find user, Update user """
 from sqlalchemy import create_engine
 from sqlalchemy.exc import InvalidRequestError
 from sqlalchemy.ext.declarative import declarative_base
@@ -43,3 +43,14 @@ class DB:
         if user is None:
             raise NoResultFound
         return user
+
+    def update_user(self, user_id: int, **kwargs) -> None:
+        """ locate the user to update, then will update the user’s attributes
+            as passed in the method’s arguments then commit changes to the
+            database """
+        _id = self.find_user_by(id=user_id)
+        for key, value in kwargs.items():
+            if not hasattr(_id, key):
+                raise ValueError
+            setattr(_id, key, value)
+        self._session.commit()
