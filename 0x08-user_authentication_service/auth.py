@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-""" Hash password, Register user, Credentials validation, Generate UUIDs """
+""" Hash password, Register user, Credentials validation, Generate UUIDs,
+    Find user by session ID """
 import bcrypt
 from sqlalchemy.orm.exc import NoResultFound
 from uuid import uuid4
@@ -59,3 +60,12 @@ class Auth:
             session_id = _generate_uuid()
             self._db.update_user(user.id, session_id=session_id)
             return session_id
+
+    def get_user_from_session_id(self, session_id: str) -> str:
+        """ returns a string or None """
+        try:
+            user = self._db.find_user_by(session_id=session_id)
+        except NoResultFound:
+            return None
+        else:
+            return user
