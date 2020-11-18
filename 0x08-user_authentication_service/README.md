@@ -37,18 +37,18 @@ pip3 install bcrypt
 * [x] 6. Basic Flask app
 * [x] 7. Register user
 * [x] 8. Credentials validation
-* [ ] 9. Generate UUIDs
-* [ ] 10. Get session ID
-* [ ] 11. Log in
-* [ ] 12. Find user by session ID
-* [ ] 13. Destroy session
-* [ ] 14. Log out
-* [ ] 15. User profile
-* [ ] 16. Generate reset password token
-* [ ] 17. Get reset password token
-* [ ] 18. Update password
-* [ ] 19. Update password end-point
-* [ ] 20. End-to-end integration test
+* [x] 9. Generate UUIDs
+* [x] 10. Get session ID
+* [x] 11. Log in
+* [x] 12. Find user by session ID
+* [x] 13. Destroy session
+* [x] 14. Log out
+* [x] 15. User profile
+* [x] 16. Generate reset password token
+* [x] 17. Get reset password token
+* [x] 18. Update password
+* [x] 19. Update password end-point
+* [x] 20. End-to-end integration test
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
