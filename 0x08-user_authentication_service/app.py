@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Basic Flask app, Register user, Log in, Log out, User profile,
-    Get reset passwords token """
+    Get reset passwords token, Update password end-point """
 from flask import Flask, jsonify, request, abort, redirect
 from auth import Auth
 app = Flask(__name__)
@@ -68,6 +68,19 @@ def get_reset_password_token():
         return jsonify({"email": email, "reset_token": token}), 200
     except ValueError:
         abort(403)
+
+
+@app.route('/reset_password', methods=['PUT'], strict_slashes=False)
+def update_password():
+    """ Update password end-point """
+    email = request.form.get('email')
+    token = request.form.get('reset_token')
+    password = request.form.get('new_password')
+    try:
+        AUTH.update_password(token, password)
+    except Exception:
+        abort(403)
+    return jsonify({"email": email, "message": "Password updated"}), 200
 
 
 if __name__ == "__main__":
