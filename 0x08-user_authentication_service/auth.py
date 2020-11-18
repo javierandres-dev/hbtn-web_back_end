@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Hash password, Register user, Credentials validation, Generate UUIDs,
-    Find user by session ID """
+    Find user by session ID, Destroy session """
 import bcrypt
 from sqlalchemy.orm.exc import NoResultFound
 from uuid import uuid4
@@ -69,3 +69,10 @@ class Auth:
             return None
         else:
             return user
+
+    def destroy_session(self, user_id: int) -> None:
+        """ updates the corresponding user’s session ID to None """
+        try:
+            self._db.update_user(user_id, session_id=None)
+        except NoResultFound:
+            return None
