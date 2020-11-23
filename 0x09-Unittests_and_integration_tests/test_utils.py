@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """ Parameterize a unit test """
 import unittest
-from utils import access_nested_map
 from parameterized import parameterized
+from utils import access_nested_map
 
 
 class TestAccessNestedMap(unittest.TestCase):
