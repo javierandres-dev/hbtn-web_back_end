@@ -5,7 +5,7 @@ import unittest
 from unittest.mock import patch, PropertyMock
 from parameterized import parameterized
 from client import GithubOrgClient
-from urllib.error import HTTPError
+from fixtures import TEST_PAYLOAD
 
 
 class TestGithubOrgClient(unittest.TestCase):
@@ -61,8 +61,10 @@ class TestGithubOrgClient(unittest.TestCase):
         self.assertEqual(expected_return, test_return)
 
 
-@parameterized.expand([
-    ])
+@parameterized_class(
+    ("org_payload", "repos_payload", "expected_repos", "apache2_repos"),
+    TEST_PAYLOAD
+)
 class TestIntegrationGithubOrgClient(unittest.TestCase):
     """ class """
     @classmethod
