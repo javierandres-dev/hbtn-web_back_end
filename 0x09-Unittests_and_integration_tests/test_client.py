@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Parameterize and patch as decorators """
+""" Parameterize and patch as decorators, Mocking a property, More patching """
 import unittest
 from unittest.mock import patch
 from parameterized import parameterized
@@ -33,3 +33,17 @@ class TestGithubOrgClient(unittest.TestCase):
             mock_get.assert_called_once
             self.assertEqual(test_return,
                              mock_get.return_value.get("repos_url"))
+
+    @patch("client.get_json", return_value=[{"name": "holberton"}])
+    """ decorator to mock get_json, it return a payload of your choice """
+    def test_public_repos(self, mock_get):
+        """ to unit-test GithubOrgClient.public_repos """
+        with patch.object(GithubOrgClient,
+                          "_public_repos_url",
+                          new_callable=PropertyMock,
+                          return_value="https://api.github.com/") as mock_pub:
+            test_client = GithubOrgClient("holberton")
+            test_return = test_client.public_repos()
+            self.assertEqual(test_return, ["holberton"])
+            mock_get.assert_called_once
+            mock_pub.assert_called_once
