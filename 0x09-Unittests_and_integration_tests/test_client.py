@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Parameterize and patch as decorators, Mocking a property, More patching,
-    Parameterize, Integration test: fixtures """
+    Parameterize, Integration test: fixtures, Integration tests """
 import unittest
 from unittest.mock import patch, PropertyMock
 from parameterized import parameterized
@@ -79,3 +79,21 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         """ It is part of the unittest.TestCase API
         method to stop the patcher """
         cls.get_patcher.stop()
+
+    def test_public_repos(self):
+        """ method to test GithubOrgClient.public_repos """
+        test_class = GithubOrgClient("holberton")
+        self.assertEqual(test_class.org, self.org_payload)
+        self.assertEqual(test_class.repos_payload, self.repos_payload)
+        self.assertEqual(test_class.public_repos(), self.expected_repos)
+        self.assertEqual(test_class.public_repos("XLICENSE"), [])
+        self.mock.assert_called()
+
+    def test_public_repos_with_license(self):
+        """ method to test the public_repos with the argument license """
+        test_class = GithubOrgClient("holberton")
+        self.assertEqual(test_class.public_repos(), self.expected_repos)
+        self.assertEqual(test_class.public_repos("XLICENSE"), [])
+        self.assertEqual(test_class.public_repos(
+            "apache-2.0"), self.apache2_repos)
+        self.mock.assert_called()
