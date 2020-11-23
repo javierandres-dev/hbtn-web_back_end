@@ -6,6 +6,7 @@ from unittest.mock import patch, PropertyMock
 from parameterized import parameterized
 from client import GithubOrgClient
 from fixtures import TEST_PAYLOAD
+from urllib.error import HTTPError
 
 
 class TestGithubOrgClient(unittest.TestCase):
@@ -66,7 +67,7 @@ class TestGithubOrgClient(unittest.TestCase):
     TEST_PAYLOAD
 )
 class TestIntegrationGithubOrgClient(unittest.TestCase):
-    """ class """
+    """ TESTCASE """
     @classmethod
     def setUpClass(cls):
         """ It is part of the unittest.TestCase API
