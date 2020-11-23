@@ -5,6 +5,7 @@ import unittest
 from unittest.mock import patch, PropertyMock
 from parameterized import parameterized
 from client import GithubOrgClient
+from urllib.error import HTTPError
 
 
 class TestGithubOrgClient(unittest.TestCase):
