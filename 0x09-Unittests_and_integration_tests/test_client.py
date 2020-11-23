@@ -82,7 +82,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
 
     def test_public_repos(self):
         """ method to test GithubOrgClient.public_repos """
-        test_class = GithubOrgClient("microsoft")
+        test_class = GithubOrgClient("google")
         self.assertEqual(test_class.org, self.org_payload)
         self.assertEqual(test_class.repos_payload, self.repos_payload)
         self.assertEqual(test_class.public_repos(), self.expected_repos)
@@ -91,7 +91,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
 
     def test_public_repos_with_license(self):
         """ method to test the public_repos with the argument license """
-        test_class = GithubOrgClient("microsoft")
+        test_class = GithubOrgClient("google")
         self.assertEqual(test_class.public_repos(), self.expected_repos)
         self.assertEqual(test_class.public_repos("XLICENSE"), [])
         self.assertEqual(test_class.public_repos(
