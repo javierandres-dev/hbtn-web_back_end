@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ Parameterize and patch as decorators, Mocking a property, More patching,
-    Parameterize """
+    Parameterize, Integration test: fixtures """
 import unittest
 from unittest.mock import patch, PropertyMock
 from parameterized import parameterized
@@ -58,3 +58,20 @@ class TestGithubOrgClient(unittest.TestCase):
         test_client = GithubOrgClient("holberton")
         test_return = test_client.has_license(repo, license_key)
         self.assertEqual(expected_return, test_return)
+
+
+@parameterized.expand([
+    ])
+class TestIntegrationGithubOrgClient(unittest.TestCase):
+    """ class """
+    @classmethod
+    def setUpClass(cls):
+        """ It is part of the unittest.TestCase API
+        method to return example payloads found in the fixtures """
+        cls.get_patcher = patch('requests.get', side_effect=HTTPError)
+
+    @classmethod
+    def tearDownClass(cls):
+        """ It is part of the unittest.TestCase API
+        method to stop the patcher """
+        cls.get_patcher.stop()
