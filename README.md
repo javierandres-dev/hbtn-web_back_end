@@ -13,6 +13,7 @@
 * [x] 380 0x06. Basic authentication
 * [x] 383 0x07. Session authentication
 * [x] 584 0x08. User authentication service
+* [ ] 610 0x09. Unittests and Integration Tests
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
