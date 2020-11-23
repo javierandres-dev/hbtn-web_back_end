@@ -33,16 +33,16 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
+* [x] 0. Parameterize a unit test
+* [x] 1. Parameterize a unit test
+* [x] 2. Mock HTTP calls
+* [x] 3. Parameterize and patch
+* [x] 4. Parameterize and patch as decorators
+* [x] 5. Mocking a property
+* [x] 6. More patching
+* [x] 7. Parameterize
+* [x] 8. Integration test: fixtures
+* [ ] 9. Integration tests
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
