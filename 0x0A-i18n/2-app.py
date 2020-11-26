@@ -16,6 +16,7 @@ class Config(object):
 app.config.from_object(Config)
 """ Use that class as config for Flask app """
 
+
 @app.route('/')
 def root():
     """ basic Flask app """
