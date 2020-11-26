@@ -21,7 +21,7 @@ app.config.from_object(Config)
 @app.route('/')
 def root():
     """ basic Flask app """
-    return render_template("3-index.html")
+    return render_template("4-index.html")
 
 
 @babel.localeselector
