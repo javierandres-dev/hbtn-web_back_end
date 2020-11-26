@@ -19,9 +19,14 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 ## Requirements
 * A ```README.md``` file.
+### Install
+The Babel Flask extension:
+```
+$ pip3 install flask_babel
+```
 
 ## Tasks
-* [ ] 0. Basic Flask app
+* [x] 0. Basic Flask app
 * [ ] 1. Basic Babel setup
 * [ ] 2. Get locale from request
 * [ ] 3. Parametrize templates
