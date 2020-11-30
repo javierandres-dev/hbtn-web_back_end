@@ -27,14 +27,14 @@ $ pip3 install flask_babel
 
 ## Tasks
 * [x] 0. Basic Flask app
-* [ ] 1. Basic Babel setup
-* [ ] 2. Get locale from request
-* [ ] 3. Parametrize templates
-* [ ] 4. Force locale with URL parameter
-* [ ] 5. Mock logging in
-* [ ] 6. Use user locale
-* [ ] 7. Infer appropriate time zone
-* [ ] 8. Display the current time
+* [x] 1. Basic Babel setup
+* [x] 2. Get locale from request
+* [x] 3. Parametrize templates
+* [x] 4. Force locale with URL parameter
+* [x] 5. Mock logging in
+* [x] 6. Use user locale
+* [x] 7. Infer appropriate time zone
+* [x] 8. Display the current time
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
