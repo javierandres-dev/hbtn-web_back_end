@@ -29,3 +29,4 @@ class Cache:
         if key:
             result = self._redis.get(key)
             return fn(result) if fn else result
+
