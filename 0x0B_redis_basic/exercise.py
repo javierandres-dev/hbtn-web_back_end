@@ -1,14 +1,30 @@
 #!/usr/bin/env python3
-""" Writing strings to Redis, Reading from Redis and recovering original type
-"""
+""" Writing strings to Redis, Reading from Redis and recovering original type,
+    Incrementing values, Storing lists """
 from typing import Union, Callable, Optional, Any
 import redis
 import uuid
 from functools import wraps
 
 
+def call_history(method: Callable) -> Callable:
+    """ store the history of inputs and outputs for a particular function """
+    key = method.__qualname__
+    inputs = key + ":inputs"
+    outputs = key + ":outputs"
+
+    @wraps(method)
+    def wrapper(self, *args, **kwds):
+        """ wrapped function """
+        self._redis.rpush(inputs, str(args))
+        data = method(self, *args, **kwds)
+        self._redis.rpush(outputs, str(result))
+        return data
+    return wrapper
+
+
 def count_calls(method: Callable) -> Callable:
-    """system to count how many times methods of the Cache class are called"""
+    """ to count how many times methods of the Cache class are called """
     key = method.__qualname__
 
     @wraps(method)
@@ -27,6 +43,7 @@ class Cache:
         self._redis = redis.Redis()
         self._redis.flushdb()
 
+    @call_history
     @count_calls
     def store(self, data: Union[str, bytes, int, float]) -> str:
         """ generate a random key (e.g. using uuid), store the input data in
