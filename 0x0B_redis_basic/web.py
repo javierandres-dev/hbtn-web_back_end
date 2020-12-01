@@ -8,7 +8,7 @@ count = 0
 
 def get_page(url: str) -> str:
     """ obtain the HTML content of a particular URL and returns it """
-    key = "count:{}".format(url)
+    key = f"count:{url}"
     r.set(key, count)
     resp = requests.get(url)
     r.incr(key)
