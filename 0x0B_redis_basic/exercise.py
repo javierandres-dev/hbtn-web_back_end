@@ -26,7 +26,7 @@ class Cache:
         """ take a key string argument and an optional Callable argument named
             fn. This callable will be used to convert the data back to the
             desired format """
-        result = self._redis.get(key)
+        data = self._redis.get(key)
         if fn:
-            result = fn(result)
-        return result
+            return fn(data)
+        return data
