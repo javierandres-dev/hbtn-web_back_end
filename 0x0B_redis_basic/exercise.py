@@ -26,22 +26,21 @@ class Cache:
         """ take a key string argument and an optional Callable argument named
             fn. This callable will be used to convert the data back to the
             desired format """
-        value = self._redis.get(key)
+        data = self._redis.get(key)
         if fn:
-            value = fn(value)
-
-        return value
+            return fn(data)
+        return data
 
     def get_str(self, key: str) -> str:
         """ automatically parametrize Cache.get to str """
-        value = self._redis.get(key)
-        return value.decode("utf-8")
+        data = self._redis.get(key)
+        return data.decode("utf-8")
 
     def get_int(self, key: str) -> int:
         """ automatically parametrize Cache.get to int """
-        value = self._redis.get(key)
+        data = self._redis.get(key)
         try:
-            value = int(value.decode("utf-8"))
+            data = int(value.decode("utf-8"))
         except Exception:
-            value = 0
-        return value
+            data = 0
+        return data
