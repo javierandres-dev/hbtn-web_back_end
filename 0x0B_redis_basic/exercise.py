@@ -90,4 +90,4 @@ def replay(method: Callable):
     redis_zipped = list(zip(inputList, outputList))
     for a, b in redis_zipped:
         attr, data = a.decode("utf-8"), b.decode("utf-8")
-        print("{key}(*{attr}) -> {result}".format(key, attr, data))
+        print("{}(*{}) -> {}".format(key, attr, data))
