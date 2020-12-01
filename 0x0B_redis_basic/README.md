@@ -28,12 +28,12 @@ $ sed -i "s/bind .*/bind 127.0.0.1/g" /etc/redis/redis.conf
 ```
 
 ## Tasks
-* [ ] 0. Writing strings to Redis
-* [ ] 1. Reading from Redis and recovering original type
-* [ ] 2. Incrementing values
-* [ ] 3. Storing lists
-* [ ] 4. Retrieving lists
-* [ ] 5. Implementing an expiring web cache and tracker
+* [x] 0. Writing strings to Redis
+* [x] 1. Reading from Redis and recovering original type
+* [x] 2. Incrementing values
+* [x] 3. Storing lists
+* [x] 4. Retrieving lists
+* [x] 5. Implementing an expiring web cache and tracker
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  

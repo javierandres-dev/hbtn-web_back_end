@@ -15,7 +15,7 @@
 * [x] 584 0x08. User authentication service
 * [x] 610 0x09. Unittests and Integration Tests
 * [x] 631 0x0A. i18n
-* [ ] 630 0x0B. Redis basic
+* [x] 630 0x0B. Redis basic
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
