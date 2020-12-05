@@ -16,7 +16,7 @@
 * [x] 610 0x09. Unittests and Integration Tests
 * [x] 631 0x0A. i18n
 * [x] 630 0x0B. Redis basic
-* [ ] 632 0x0C. MySQL advanced
+* [x] 632 0x0C. MySQL advanced
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
