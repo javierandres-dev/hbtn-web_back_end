@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
-""" Log stats """
+"""Log stats"""
 from pymongo import MongoClient
 
 
 def log(a: dict) -> int:
     """return log"""
     client = MongoClient('mongodb://127.0.0.1:27017')
-    nginxLogs = client.logs.nginx
-    return nginxLogs.count_documents(a)
+    nginx_logs = client.logs.nginx
+    return nginx_logs.count_documents(a)
 
 
-def main():
-    """ provides some stats about Nginx logs stored in MongoDB """
+def print_nginx_logs_stats():
+    """
+    provides some stats about
+    Nginx logs stored in MongoDB
+    """
     print(f"{ log({}) } logs")
     print("Methods:")
     print(f"\tmethod GET: { log({'method': 'GET'}) }")
@@ -23,4 +26,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    print_nginx_logs_stats()
