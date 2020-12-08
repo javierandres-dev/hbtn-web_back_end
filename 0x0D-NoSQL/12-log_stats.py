@@ -12,7 +12,7 @@ def helper(a: dict) -> int:
 
 def main():
     """ provides some stats about Nginx logs stored in MongoDB """
-    print(f"{ helper({}) } logs")
+    print(f"{helper({})} logs")
     print("Methods:")
     print(f"\tmethod GET: {helper({'method': 'GET'})}")
     print(f"\tmethod POST: {helper({'method': 'POST'})}")
