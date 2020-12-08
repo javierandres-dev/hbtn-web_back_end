@@ -17,6 +17,7 @@
 * [x] 631 0x0A. i18n
 * [x] 630 0x0B. Redis basic
 * [x] 632 0x0C. MySQL advanced
+* [ ] 411 0x0D. NoSQL
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
