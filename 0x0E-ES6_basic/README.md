@@ -36,19 +36,19 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Const or let?
-* [ ] 1. Block Scope
-* [ ] 2. Arrow functions
-* [ ] 3. Parameter defaults
-* [ ] 4. Rest parameter syntax for functions
-* [ ] 5. The wonders of spread syntax
-* [ ] 6. Take advantage of template literals
-* [ ] 7. Object property value shorthand syntax
-* [ ] 8. No need to create empty objects before adding in properties
-* [ ] 9. ES6 method properties
-* [ ] 10. For...of Loops
-* [ ] 11. Iterator
-* [ ] 12. Let's create a report object
+* [x] 0. Const or let?
+* [x] 1. Block Scope
+* [x] 2. Arrow functions
+* [x] 3. Parameter defaults
+* [x] 4. Rest parameter syntax for functions
+* [x] 5. The wonders of spread syntax
+* [x] 6. Take advantage of template literals
+* [x] 7. Object property value shorthand syntax
+* [x] 8. No need to create empty objects before adding in properties
+* [x] 9. ES6 method properties
+* [x] 10. For...of Loops
+* [x] 11. Iterator
+* [x] 12. Let's create a report object
 * [ ] 13. Iterating through report objects
 * [ ] 14. Iterate through object
 

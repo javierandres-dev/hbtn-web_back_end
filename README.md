@@ -18,7 +18,7 @@
 * [x] 630 0x0B. Redis basic
 * [x] 632 0x0C. MySQL advanced
 * [x] 411 0x0D. NoSQL
-* [ ] 577 0x0E. ES6 Basics
+* [x] 577 0x0E. ES6 Basics
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
