@@ -1,0 +1,57 @@
+# 0x0E. ES6 Basics
+:open_file_folder: Specializations - Web Stack programming ― Back-end  
+:bust_in_silhouette: by Johann Kerbrat, Engineering Manager at Uber Works  
+:copyright: **[Holberton School](https://www.holbertonschool.com/)**  
+:bookmark: arrow functions | block scope | block scoping | for-of loop | iterators | javascript | rest parameter | spread parameter | string templating
+
+## Resources
+### For this project, students are expected to look at this concept:
+* [Software Linter](https://intranet.hbtn.io/concepts/354)
+  - [lint (software) - Wikipedia](https://en.wikipedia.org/wiki/Lint_(software))
+  - [ESLint - Pluggable JavaScript linter](https://eslint.org/)
+  - [pycodestyle - documentation](https://pycodestyle.pycqa.org/en/latest/)
+### Read or watch:
+* [ECMAScript 6 - ECMAScript 2015](https://www.w3schools.com/js/js_es6.asp)
+* [Statements and declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
+* [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+* [Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+* [Rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+* [Javascript ES6 — Iterables and Iterators](https://towardsdatascience.com/javascript-es6-iterables-and-iterators-de18b54f4d4)
+* [Jest Testing Framework](https://jestjs.io/)
+
+## Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/2012/04/feynman-technique/), without the help of Google:
+### General
+* What ES6 is
+* New features introduced in ES6
+* The difference between a constant and a variable
+* Block-scoped variables
+* Arrow functions and function parameters default to them
+* Rest and spread function parameters
+* String templating in ES6
+* Object creation and their properties in ES6
+* Iterators and for-of loops
+
+## Requirements
+* A ```README.md``` file.
+
+## Tasks
+* [ ] 0. Const or let?
+* [ ] 1. Block Scope
+* [ ] 2. Arrow functions
+* [ ] 3. Parameter defaults
+* [ ] 4. Rest parameter syntax for functions
+* [ ] 5. The wonders of spread syntax
+* [ ] 6. Take advantage of template literals
+* [ ] 7. Object property value shorthand syntax
+* [ ] 8. No need to create empty objects before adding in properties
+* [ ] 9. ES6 method properties
+* [ ] 10. For...of Loops
+* [ ] 11. Iterator
+* [ ] 12. Let's create a report object
+* [ ] 13. Iterating through report objects
+* [ ] 14. Iterate through object
+
+## Software engineer
+Javier Andrés Garzón Patarroyo  
+:octocat: [GitHub](https://github.com/javierandresgp/)
