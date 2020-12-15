@@ -2,8 +2,8 @@ import signUpUser from './4-all-reject';
 import uploadPhoto from './5-all-reject';
 
 export default async function handleProfileSignup(firstName, lastName, fileName) {
-  const user = {status: 'pending ', value: '',};
-  const photo = {status: 'pending ', value: '',};
+  const user = {status: 'pending ',};
+  const photo = {status: 'pending ',};
   try {
     const signup = await signUpUser(firstName, lastName);
     user.status = 'fulfilled';
@@ -12,7 +12,6 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     user.status = 'rejected';
     user.value = error.toString();
   }
-
   try {
     const upload = await uploadPhoto(fileName);
     photo.status = 'fulfilled';
@@ -21,6 +20,5 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     photo.status = 'rejected';
     photo.value = error.toString();
   }
-
   return [user, photo];
 }
