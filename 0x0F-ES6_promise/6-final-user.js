@@ -3,10 +3,10 @@ import uploadPhoto from './5-photo-reject';
 
 export default async function handleProfileSignup(firstName, lastName, fileName) {
   const user = {
-    status: 'pending ',
+    status: 'pending',
   };
   const photo = {
-    status: 'pending ',
+    status: 'pending',
   };
 
   try {
