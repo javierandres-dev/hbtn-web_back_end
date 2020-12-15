@@ -19,6 +19,7 @@
 * [x] 632 0x0C. MySQL advanced
 * [x] 411 0x0D. NoSQL
 * [x] 577 0x0E. ES6 Basics
+* [ ] 578 0x0F. ES6 Promises
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
