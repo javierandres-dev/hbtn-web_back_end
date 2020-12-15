@@ -15,18 +15,18 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
     const signup = await signUpUser(firstName, lastName);
     user.status = 'fulfilled';
     user.value = signup;
-  } catch (err) {
+  } catch (error) {
     user.status = 'rejected';
-    user.value = err.toString();
+    user.value = error.toString();
   }
 
   try {
     const upload = await uploadPhoto(fileName);
     photo.status = 'fulfilled';
     photo.value = upload;
-  } catch (err) {
+  } catch (error) {
     photo.status = 'rejected';
-    photo.value = err.toString();
+    photo.value = error.toString();
   }
 
   return [user, photo];
