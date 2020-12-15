@@ -1,6 +1,6 @@
 export default function guardrail(mathFunction) {
   const queue = [];
-  let value;
+  let value = undefined;
 
   try {
     value = mathFunction();
