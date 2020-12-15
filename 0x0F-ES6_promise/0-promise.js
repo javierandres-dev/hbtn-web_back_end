@@ -1,6 +1,4 @@
-// Return a Promise
+/* eslint-disable */
 export default function getResponseFromAPI() {
-  return new Promise((res, rej) => {
-    (true) ? res() : rej();
-  })
+  return new Promise(() => {});
 }
