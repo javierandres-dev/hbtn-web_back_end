@@ -1,5 +1,4 @@
-// return a promise
-const getFullResponseFromAPI = success => {
+export default getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
     if (success === true) {
       resolve({
