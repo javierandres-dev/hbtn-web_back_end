@@ -1,4 +1,3 @@
-/* eslint-disable */
 export default function handleResponseFromAPI(promise) {
   return promise
     .then(() => ({
@@ -6,5 +5,5 @@ export default function handleResponseFromAPI(promise) {
       body: 'success',
     }))
     .catch(() => new Error())
-    .finally(() => console.log('Got a response from the API'));
+    .then(() => console.log('Got a response from the API'));
 }
