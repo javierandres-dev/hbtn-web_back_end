@@ -20,6 +20,7 @@
 * [x] 411 0x0D. NoSQL
 * [x] 577 0x0E. ES6 Basics
 * [x] 578 0x0F. ES6 Promises
+* [ ] 579 0x10. ES6 classes
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
