@@ -5,6 +5,6 @@ export default class Airport {
   }
 
   get [Symbol.toStringTag]() {
-    return JSON.stringify(Airport);
+    return this._code;
   }
 }
