@@ -21,7 +21,7 @@
 * [x] 577 0x0E. ES6 Basics
 * [x] 578 0x0F. ES6 Promises
 * [x] 579 0x10. ES6 classes
-* [ ] 580 0x11. ES6 data manipulation
+* [x] 580 0x11. ES6 data manipulation
 
 ## Software engineer
 Javier Andrés Garzón Patarroyo  
