@@ -25,4 +25,4 @@
 * [ ] 615 0x12. NodeJS Basics
 
 ## Software engineer
-[Javier Andrés Garzón Patarroyo](https://github.com/javierandresgp/)
+[Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
