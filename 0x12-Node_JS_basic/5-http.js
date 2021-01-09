@@ -1,6 +1,6 @@
 const http = require('http');
-
 const countStudents = require('./3-read_file_async');
+
 const port = 1245;
 
 const app = http.createServer((req, res) => {
@@ -15,7 +15,7 @@ const app = http.createServer((req, res) => {
         res.write('This is the list of our students\n');
         res.write(`Number of students: ${subjects.count}\n`);
         for (const subject in subjects) {
-          if (subject) res.write(`Number of students in ${subject}: ${subjects[subject].length}. List: ${subjects[subject].join(', ')}\n`);
+          if (subject && subject !== 'count') res.write(`Number of students in ${subject}: ${subjects[subject].length}. List: ${subjects[subject].join(', ')}\n`);
         }
         res.end();
       })
