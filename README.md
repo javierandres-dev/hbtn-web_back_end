@@ -22,7 +22,7 @@
 * [x] 578 0x0F. ES6 Promises
 * [x] 579 0x10. ES6 classes
 * [x] 580 0x11. ES6 data manipulation
+* [ ] 615 0x12. NodeJS Basics
 
 ## Software engineer
-Javier Andrés Garzón Patarroyo  
-:octocat: [GitHub](https://github.com/javierandresgp/)
+[Javier Andrés Garzón Patarroyo](https://github.com/javierandresgp/)
