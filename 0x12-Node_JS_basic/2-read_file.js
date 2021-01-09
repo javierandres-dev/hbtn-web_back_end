@@ -13,7 +13,7 @@ const countStudents = (aPath) => {
     for (const subject in subjects) {
       if (subject) console.log(`Number of students in ${subject}: ${subjects[subject].length}. List: ${subjects[subject].join(', ')}`);
     }
-  } catch (error) {
+  } catch (err) {
     throw new Error('Cannot load the database');
   }
 };
