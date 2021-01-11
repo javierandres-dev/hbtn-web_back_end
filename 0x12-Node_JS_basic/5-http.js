@@ -16,6 +16,7 @@ const app = http.createServer(async (req, res) => {
       res.end(error.message);
     }
   }
+  res.statusCode = 404;
   res.end();
 });
 app.listen(port);
