@@ -6,7 +6,6 @@ const countStudents = require('./3-read_file_async');
 const DATABASE = args[0];
 
 const app = express();
-const port = 1245;
 
 app.get('/', (req, res) => {
   res.send('Hello Holberton School!');
@@ -22,8 +21,6 @@ app.get('/students', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  //   console.log(`Example app listening at http://localhost:${port}`);
-});
+app.listen(1245);
 
 module.exports = app;
