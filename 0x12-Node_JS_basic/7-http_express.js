@@ -19,6 +19,6 @@ app.get('/students', async (req, res) => {
   }
 });
 
-app.listen(port)
+app.listen(port);
 
 module.exports = app;
