@@ -10,7 +10,6 @@ const app = express();
 app.get('/', (req, res) => {
   res.send('Hello Holberton School!');
 });
-
 app.get('/students', async (req, res) => {
   const msg = 'This is the list of our students\n';
   try {
@@ -20,7 +19,5 @@ app.get('/students', async (req, res) => {
     res.send(`${msg}${error.message}`);
   }
 });
-
 app.listen(1245);
-
 module.exports = app;
