@@ -1,6 +1,5 @@
 const express = require('express');
 
-const args = process.argv.slice(2);
 const countStudents = require('./3-read_file_async');
 
 const app = express();
