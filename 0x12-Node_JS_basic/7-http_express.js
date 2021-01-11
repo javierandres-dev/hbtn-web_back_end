@@ -1,7 +1,8 @@
 const express = require('express');
 const countStudents = require('./3-read_file_async');
-
 const app = express();
+
+const port = 1245;
 
 app.get('/', (req, res) => res.send('Hello Holberton School!'));
 app.get('/students', ((req, res) => {
@@ -11,7 +12,9 @@ app.get('/students', ((req, res) => {
       res.write(`${data}`);
       res.end();
     })
-    .catch((error) => { throw error; });
+    .catch((error) => { 
+      res.end(error.message);
+    });
 }));
-app.listen(1245);
+app.listen(port);
 module.exports = app;
