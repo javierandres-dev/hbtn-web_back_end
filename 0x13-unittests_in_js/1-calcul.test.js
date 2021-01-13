@@ -1,3 +1,4 @@
+'use strict';
 const assert = require('assert');
 const calculateNumber = require('./1-calcul.js');
 
@@ -25,6 +26,7 @@ describe('calculateNumber type == SUBSTRACT', () => {
     assert.strictEqual(calculateNumber('SUBSTRACT', -1.5, 0), -1);
   });
 });
+
 describe('calculateNumber type == DIVIDE', () => {
   it('check the output', () => {
     assert.strictEqual(calculateNumber('DIVIDE', 2, 2.5), 0.6666666666666666);

@@ -1,3 +1,4 @@
+'use strict';
 const calculateNumber = (type, a, b) => {
   switch (type) {
     case 'SUM':
