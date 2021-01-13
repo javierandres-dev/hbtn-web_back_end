@@ -1,4 +1,3 @@
-'use strict';
 const chai = require('chai');
 const calculateNumber = require('./2-calcul_chai.js');
 
