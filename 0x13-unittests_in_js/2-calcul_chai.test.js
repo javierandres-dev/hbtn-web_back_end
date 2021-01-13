@@ -30,8 +30,11 @@ describe('calculateNumber type == SUBTRACT', () => {
 
 describe('calculateNumber type == DIVIDE', () => {
   it('check the output', () => {
-    chai.expect(calculateNumber('DIVIDE', 2, 2.5)).to.equal(0.6666666666666666);
+    chai.expect(calculateNumber('DIVIDE', 16, 2)).to.equal(8);
+    chai.expect(calculateNumber('DIVIDE', 2, 9.5)).to.equal(0.2);
+    chai.expect(calculateNumber('DIVIDE', 9.5, 2)).to.equal(5);
     chai.expect(calculateNumber('DIVIDE', 0.0, 2)).to.equal(0);
+    chai.expect(calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.2);
     chai.expect(calculateNumber('DIVIDE', -1, 1)).to.equal(-1);
     chai.expect(calculateNumber('DIVIDE', 1, 0)).to.equal('Error');
   });
