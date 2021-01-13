@@ -23,6 +23,7 @@
 * [x] 579 0x10. ES6 classes
 * [x] 580 0x11. ES6 data manipulation
 * [x] 615 0x12. NodeJS Basics
+* [ ] 614 0x13. Unittests in JS
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
