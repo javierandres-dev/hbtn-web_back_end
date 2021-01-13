@@ -4,7 +4,7 @@
   "description": "unit tests",
   "main": "0-calcul.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "author": "https://www.javierandresgp.com",
   "license": "ISC",
