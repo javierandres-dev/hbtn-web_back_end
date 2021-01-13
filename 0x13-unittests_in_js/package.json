@@ -1,10 +1,10 @@
 {
-  "name": "0x13-unittests_in_js",
-  "version": "0.0.1",
+  "name": "task_0",
+  "version": "1.0.0",
   "description": "unit tests",
   "main": "0-calcul.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node ./node_modules/mocha/bin/mocha"
   },
   "author": "https://www.javierandresgp.com",
   "license": "ISC",
