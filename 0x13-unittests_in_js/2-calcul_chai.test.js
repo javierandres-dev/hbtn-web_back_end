@@ -1,3 +1,4 @@
+'use strict';
 const chai = require('chai');
 const calculateNumber = require('./2-calcul_chai.js');
 
@@ -34,5 +35,6 @@ describe('calculateNumber type == DIVIDE', () => {
     chai.expect(calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.2);
     chai.expect(calculateNumber('DIVIDE', -1, 1)).to.equal(-1);
     chai.expect(calculateNumber('DIVIDE', 1, 0)).to.equal('Error');
+    chai.expect(calculateNumber('DIVIDE', 10.7, 0.2)).to.equal('Error');
   });
 });
