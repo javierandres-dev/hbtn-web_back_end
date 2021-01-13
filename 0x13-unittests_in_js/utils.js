@@ -1,4 +1,3 @@
-'use strict';
 const Utils = {
   calculateNumber(type, a, b) {
     if (type === 'SUM') {
