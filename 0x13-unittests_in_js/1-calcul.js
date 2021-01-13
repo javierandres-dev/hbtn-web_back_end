@@ -4,7 +4,7 @@ const calculateNumber = (type, a, b) => {
     case 'SUM':
       return Math.round(a) + Math.round(b);
       break;
-    case 'SUBSTRACT':
+    case 'SUBTRACT':
       return Math.round(a) - Math.round(b);
       break;
     case 'DIVIDE':

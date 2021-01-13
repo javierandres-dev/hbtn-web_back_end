@@ -16,14 +16,15 @@ describe('calculateNumber type == SUM', () => {
   });
 });
 
-describe('calculateNumber type == SUBSTRACT', () => {
+describe('calculateNumber type == SUBTRACT', () => {
   it('checks the output', () => {
-    assert.strictEqual(calculateNumber('SUBSTRACT', 5, 3), 2);
-    assert.strictEqual(calculateNumber('SUBSTRACT', 3.1, 2.5), 0);
-    assert.strictEqual(calculateNumber('SUBSTRACT', 0.0, 5), -5);
-    assert.strictEqual(calculateNumber('SUBSTRACT', 2, 4.5), -3);
-    assert.strictEqual(calculateNumber('SUBSTRACT', -1, 1), -2);
-    assert.strictEqual(calculateNumber('SUBSTRACT', -1.5, 0), -1);
+    assert.strictEqual(calculateNumber('SUBTRACT', 5, 3), 2);
+    assert.strictEqual(calculateNumber('SUBTRACT', 3.1, 2.5), 0);
+    assert.strictEqual(calculateNumber('SUBTRACT', 4.5, 2), 3);
+    assert.strictEqual(calculateNumber('SUBTRACT', 0.0, 5), -5);
+    assert.strictEqual(calculateNumber('SUBTRACT', 2, 4.5), -3);
+    assert.strictEqual(calculateNumber('SUBTRACT', -1, 1), -2);
+    assert.strictEqual(calculateNumber('SUBTRACT', -1.5, 0), -1);
   });
 });
 
