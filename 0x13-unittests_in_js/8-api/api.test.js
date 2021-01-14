@@ -4,7 +4,7 @@ const chai = require('chai');
 
 describe('basic integration testing', () => {
   describe('GET /', () => {
-    it('Code: 200 | Body: Welcome to the payment system', (done) => {
+    it('endpoint GET /', (done) => {
       const call = {
         url: 'http://localhost:7865',
         method: 'GET',
