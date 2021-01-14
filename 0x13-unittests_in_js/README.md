@@ -29,16 +29,16 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * A ```README.md``` file.
 
 ## Tasks
-* [ ] 0. Basic test with Mocha and Node assertion library
-* [ ] 1. Combining descriptions
-* [ ] 2. Basic test using Chai assertion library
-* [ ] 3. Spies
-* [ ] 4. Stubs
-* [ ] 5. Hooks
-* [ ] 6. Async tests with done
-* [ ] 7. Skip
-* [ ] 8. Basic Integration testing
-* [ ] 9. Regex integration testing
+* [x] 0. Basic test with Mocha and Node assertion library
+* [x] 1. Combining descriptions
+* [x] 2. Basic test using Chai assertion library
+* [x] 3. Spies
+* [x] 4. Stubs
+* [x] 5. Hooks
+* [x] 6. Async tests with done
+* [x] 7. Skip
+* [x] 8. Basic Integration testing
+* [x] 9. Regex integration testing
 * [ ] 10. Deep equality & Post integration testing
 
 ## Software engineer
