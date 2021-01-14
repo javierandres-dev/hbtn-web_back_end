@@ -2,12 +2,13 @@
 const chai = require('chai');
 const getPaymentTokenFromAPI = require('./6-payment_token.js');
 
-describe('getPaymentTokenFromAPI function', () => {
-  it('async testing Promise', (done) => {
+describe('getPaymentTokenFromAPI', () => {
+  it('async tests with done', (done) => {
     getPaymentTokenFromAPI(true)
       .then((res) => {
-        chai.expect(res).to.eql({ data: 'Successful response from the API' })
-      })
+        chai.expect(res).to.include({ data: 'Successful response from the API' });
       done();
-  })
-})
+      })
+      .catch((error) => done(error));
+  });
+});
