@@ -1,6 +1,5 @@
 'use strict';
 import redis from 'redis';
-//const redis = require("redis");
 const client = redis.createClient();
 
 client.on("error", (error) => {
