@@ -24,7 +24,7 @@
 * [x] 580 0x11. ES6 data manipulation
 * [x] 615 0x12. NodeJS Basics
 * [x] 614 0x13. Unittests in JS
-* [ ] 620 0x14. Queuing System in JS
+* [x] 620 0x14. Queuing System in JS
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
